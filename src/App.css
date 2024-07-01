@@ -1,38 +1,183 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+/* styles.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  color: #000;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+main {
+  flex: 1;
+  margin-top: 50px; /* to ensure content is below the fixed header */
+  width: 100%;
+  max-width: 800px;
+}
+
+.intro {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.intro h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+h5,h4 {
+  color: #000;
+}
+
+h4{
+  text-indent: left;
+}
+
+.intro p {
+  font-size: 18px;
+  color: #777;
+}
+
+.content {
+  text-align: left;
+}
+
+.content h2, .content h3 {
+  font-weight: 600;
+}
+
+.content p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #333;
+}
+
+.containerRegister {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card {
+  width: 45%;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.card button {
+  background-color: black;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  color: #000;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.topics {
+  display: flex;
+}
+
+.topic {
+  margin: 0 20px;
+}
+
+.topic h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.topic ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.topic ul li {
+  margin-bottom: 5px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #007bff;
 }
